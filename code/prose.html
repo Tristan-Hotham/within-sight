@@ -1,0 +1,127 @@
+<div class="stats">
+  <div><b class="h">{{network.20.pairs_visible|int}}</b><span>pairs of hillforts in line of sight within 20 km</span></div>
+  <div><b>{{network.20.share_seeing_any|pct0}}</b><span>of hillforts can see at least one other</span></div>
+  <div><b>{{network.20.largest_component|int}}</b><span>forts in the largest linked network</span></div>
+  <div><b class="h">+{{null.20.excess_pct|pct0}}</b><span>more pairs in sight than on matched ground nearby</span></div>
+</div>
+
+<p class="lede">In the Cheviots or the Welsh Marches, almost every hillfort has another in view. That has fed an old idea: that hillforts were placed to see each other, perhaps to pass signals by fire or smoke along a chain of hilltops. The trouble with the idea is that hills see hills. If you put forts on high ground, they will see each other whether anyone planned it or not.</p>
+<p>So I tested it. I took all 4,147 hillforts in the Atlas of Hillforts of Britain and Ireland and traced a line of sight across the ground between every pair less than 30 km apart: {{network.30.pairs_in_range|int}} lines in all. Then I moved every fort to a random spot 1 to 5 km away on similar ground and did it again, twenty times over. If the real forts see each other more than the shifted ones do, siting was doing something that the hills alone do not.</p>
+<p>The short answer: they do, by about {{null.20.excess_pct|pct0}}. But the longer answer is more interesting. Most or all of that extra comes from each fort sitting in a spot with a wider view than its surroundings, not from forts being aimed at one another.</p>
+
+<h2><span class="n">01 · The map</span>Who could see whom</h2>
+<p>Every dot is a hillfort. Orange dots can see at least one other hillfort within the chosen distance, and bigger dots see more. Grey dots see none. Tap a fort to draw its sight lines. Switch on the network to see which forts are linked into chains, or show the largest network and the longest relay routes.</p>
+<div class="figure bleed">
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Maximum distance">
+      <button class="btn" data-km="10" aria-pressed="false">10 km</button>
+      <button class="btn" data-km="20" aria-pressed="true">20 km</button>
+      <button class="btn" data-km="30" aria-pressed="false">30 km</button>
+    </div>
+    <button class="btn" id="bnet" aria-pressed="false">Show network</button>
+    <button class="btn" id="bchain" aria-pressed="false">Longest relays</button>
+    <input type="search" id="q" placeholder="Find a hillfort, e.g. Yeavering Bell" aria-label="Find a hillfort" list="names">
+    <datalist id="names"></datalist>
+  </div>
+  <div class="mapgrid">
+    <div>
+      <div id="map" role="application" aria-label="Map of 4,147 hillforts with lines of sight between them"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="side">
+      <div class="card empty" id="card">Tap a dot, or search for a hillfort, to draw its sight lines.</div>
+      <div class="fig-h" style="margin-top:4px" id="toph">Forts that see the most</div>
+      <ol class="toplist" id="toplist"></ol>
+    </div>
+  </div>
+  <div class="src">Line of sight from 2 m above the ground at each fort's recorded point to 2 m above the ground at the other, over a 90 m elevation model, with earth curvature and standard refraction. A line of sight is not the same as being able to make out a fort: see section 07. Site data: Lock, G. and Ralston, I. 2017, Atlas of Hillforts of Britain and Ireland (CC BY-SA 4.0).</div>
+</div>
+
+<h2><span class="n">02 · Neighbours</span>Most forts can see another</h2>
+<p>Within 20 km, {{network.20.forts_seeing_any|int}} of the 4,147 hillforts ({{network.20.share_seeing_any|pct0}}) have at least one other hillfort in line of sight. The typical fort sees {{network.20.median_visible|int}}, and the average is {{network.20.mean_visible|f1}}, pulled up by a long tail. {{network.20.isolated|int}} forts see no other within 20 km.</p>
+<p>The forts that see the most are in the Tweed basin, on both sides of the border. Rubers Law in the Scottish Borders has {{examples.rubers.visible_20km|int}} other hillforts in line of sight within 20 km, and Yeavering Bell in Northumberland has {{examples.yeavering.visible_20km|int}}. That is partly the view and partly the crowd: Yeavering Bell has {{examples.yeavering.forts_within_20km|int}} other forts within 20 km to look at.</p>
+<div class="figure">
+  <div class="controls"><div class="seg" role="group" aria-label="Maximum distance"><button class="btn" data-hkm="10" aria-pressed="false">10 km</button><button class="btn" data-hkm="20" aria-pressed="true">20 km</button><button class="btn" data-hkm="30" aria-pressed="false">30 km</button></div></div>
+  <div class="fig-h">How many other hillforts each fort can see</div>
+  <div class="fig-sub">Number of hillforts by count of other hillforts in line of sight. The last bar groups 20 or more.</div>
+  <div class="chart" id="hist"></div>
+</div>
+<p>Distance matters a great deal. Of pairs less than 2 km apart, {{distance_profile.0.share|pct0}} are in line of sight. Of pairs 18 to 20 km apart, only {{distance_profile.9.share|pct0}} are. Across all pairs within 20 km, {{network.20.share_visible|pct0}} are intervisible: {{network.20.pairs_visible|int}} of {{network.20.pairs_in_range|int}}.</p>
+<div class="figure">
+  <div class="fig-h">Share of pairs in line of sight, by distance apart</div>
+  <div class="fig-sub">All {{network.30.pairs_in_range|int}} pairs of hillforts within 30 km, in 2 km bands.</div>
+  <div class="chart" id="dprof"></div>
+</div>
+
+<h2><span class="n">03 · Chains</span>A message from Flintshire to Devon</h2>
+<p>If fort A can see fort B, and B can see C, a signal could in principle pass from A to C. Joining up every visible pair turns the hillforts into networks. Within 20 km, the largest has {{network.20.largest_component|int}} forts and spreads across {{network.20.top_components.0.span_km|f1}} km of the Scottish Borders, Northumberland, the Lothians and beyond. The second largest, with {{network.20.top_components.1.size|int}} forts, runs from the Welsh borders down to Wessex and the south-west.</p>
+<p>That second network gives the longest relay I found. A signal passed fort to fort could in principle travel from {{network.20.farthest_relay.start_short|raw}}, to {{network.20.farthest_relay.end_short|raw}}, {{network.20.farthest_relay.straight_km|int}} km apart in a straight line, in {{network.20.farthest_relay.hops|int}} hops. Within the largest network, the route that needs the most hops between any two forts takes {{network.20.diameter.hops|int}}.</p>
+<p>At the other end, {{network.20.component_size_bins.1|int}} forts stand alone, and many more sit in small groups of two to ten. Allow 30 km and the largest network grows to {{network.30.largest_component|int}} forts; cut it to 10 km and it shrinks to {{network.10.largest_component|int}}.</p>
+<div class="figure">
+  <div class="controls"><div class="seg" role="group" aria-label="Maximum distance"><button class="btn" data-ckm="10" aria-pressed="false">10 km</button><button class="btn" data-ckm="20" aria-pressed="true">20 km</button><button class="btn" data-ckm="30" aria-pressed="false">30 km</button></div></div>
+  <div class="fig-h">How big are the networks?</div>
+  <div class="fig-sub">Hillforts counted by the size of the linked network they belong to.</div>
+  <div class="chart" id="comps"></div>
+</div>
+<p class="pull">A chain on a map is not a chain in the past. Nobody knows which of these forts were in use at the same time.</p>
+<p>Hillforts were built and used over more than a thousand years, mostly in the late Bronze Age and Iron Age, with some reused much later. A relay of {{network.20.farthest_relay.hops|int}} hops assumes every fort along it was standing and in use at once. The networks here are what the ground allows, not what people did.</p>
+
+<h2><span class="n">04 · The test</span>Do they see more than hills do?</h2>
+<p>To test the signalling idea, I needed a fair comparison. For each fort I drew 500 random points between 1 and 5 km away and kept the ones on similar ground: about as high, and holding a similar rank in height within 2 km (a fort on the highest ground around is matched to points that are also on the highest ground around). {{null_matching.share_forts_matched|pct0}} of forts had at least one match. I then built twenty shifted maps, each with every fort moved to one of its matches, and traced the sight lines again.</p>
+<p>The shifted maps keep the regional pattern, the density of forts and the kind of ground they sit on. What they lose is the exact spot each fort was built.</p>
+<div class="figure">
+  <div class="fig-h">Real hillforts against shifted ones</div>
+  <div class="fig-sub">Share of pairs within range that are in line of sight. Purple: each of {{null.20.replicates|int}} shifted maps. Green: a real fort looking at its neighbour's shifted position. Diamond: what good views alone would give. Orange: real forts.</div>
+  <div class="chart" id="nullc"></div>
+</div>
+<p>Within 20 km, {{null.20.observed_visible|int}} real pairs are in line of sight. The shifted maps average {{null.20.null_visible_mean|int}} (range {{null.20.null_visible_min|int}} to {{null.20.null_visible_max|int}}). None of the twenty comes close. The real forts see each other about {{null.20.excess_pct|pct0}} more often than matched ground nearby would, and the gap holds at 10 km (+{{null.10.excess_pct|pct0}}) and 30 km (+{{null.30.excess_pct|pct0}}).</p>
+<p>So the siting was not random with respect to view. But that does not yet mean forts were placed to see each other. There is a simpler explanation: each fort was placed somewhere with a good all-round view, and two places with good views are more likely to see each other.</p>
+<h3>Seeing far, or seeing each other?</h3>
+<p>To split the two, I ran a mixed test: a real fort looking at the shifted position of its neighbour. If forts were simply built in more open spots, a real fort should see its neighbour's shifted position more often than two shifted points see each other, and the gain should roughly double when both ends are real. If forts were aimed at each other, two real forts should do much better than that.</p>
+<p>A real fort looking at a shifted neighbour within 20 km gets a line of sight {{null.20.cross_share_mean|pct1}} of the time, against {{null.20.null_share_mean|pct1}} for two shifted points. Apply that gain at both ends and you would expect {{null.20.expected_if_sites_only|pct1}} of real pairs to be in sight. The real figure is {{null.20.observed_share|pct1}}, almost exactly what good views alone predict. Within 10 km the real figure is a little higher than predicted ({{null.10.observed_share|pct1}} against {{null.10.expected_if_sites_only|pct1}}); within 30 km it is lower ({{null.30.observed_share|pct1}} against {{null.30.expected_if_sites_only|pct1}}).</p>
+<p class="pull">The extra intervisibility looks like a by-product of good views, not of forts aimed at each other.</p>
+<p>In other words, almost all of the extra intervisibility can be explained by each fort having a wider view than the ground around it. At most there is a small extra between close neighbours: about {{null.10.pair_excess_pct|pct0}} more pairs in sight within 10 km than good views alone predict. I find no sign, at this national scale, of forts being placed to see distant neighbours in particular. That does not rule out signalling in particular places or periods. It does mean the national pattern needs no signalling to explain it.</p>
+<p>The big networks are not special either. Within 20 km the largest real network has {{null.20.observed_largest|int}} forts; the largest networks on the shifted maps have {{null.20.null_largest_min|int}} to {{null.20.null_largest_max|int}}. Chains that long are what you get from this many forts on this kind of ground.</p>
+
+<h2><span class="n">05 · Who sees more</span>Size helps a little; the coast does not</h2>
+<p>Raw counts favour multivallate forts, with two or more ramparts. They see {{attributes.groups.multivallate.mean_visible|f1}} other forts on average within 20 km, against {{attributes.groups.univallate.mean_visible|f1}} for forts with a single rampart. But multivallate forts also have more neighbours: {{attributes.groups.multivallate.mean_in_range|f1}} within 20 km on average, against {{attributes.groups.univallate.mean_in_range|f1}}. Count only the share of neighbours a fort can see, and allow for size, height and nation, and the rampart difference disappears.</p>
+<p>The chart shows that model. Each row is the change in the odds that a fort can see a given neighbour within 20 km. The strongest factor by far is how high the fort sits relative to the ground within 2 km. Bigger forts see slightly more: each doubling of the enclosed area multiplies the odds by about {{attributes.glm_share_visible_20km.rows.0.odds_ratio|f2}}. Coastal forts see far fewer: the odds are {{attributes.glm_share_visible_20km.rows.2.odds_ratio|f2}} times those of inland forts. Only {{attributes.groups.coastal.share_seeing_any|pct0}} of coastal forts can see any other hillfort within 20 km, against {{attributes.groups.inland.share_seeing_any|pct0}} inland.</p>
+<div class="figure">
+  <div class="fig-h">What makes a neighbour visible? (odds ratio, 95% interval)</div>
+  <div class="fig-sub">Binomial model of visible forts out of forts within 20 km, {{attributes.glm_share_visible_20km.n|int}} forts with area and ramparts recorded, with nation controls. Right of the line = more likely to be in sight.</div>
+  <div class="chart" id="coef"></div>
+  <div class="src">Pairs are not independent of each other, so the intervals are narrower than they should be. Treat the direction and rough size of each effect as the finding.</div>
+</div>
+<p>Absolute height works the other way once local height is allowed for: forts higher above sea level see a slightly smaller share of their neighbours. Upland forts tend to sit in more broken country, where the next ridge gets in the way.</p>
+
+<h2><span class="n">06 · Regions</span>The Borders stand out</h2>
+<p>The nations differ partly because of how crowded they are, and partly because of the ground. Forts in Scotland average {{regional.0.mean_visible|f1}} others in sight within 20 km, and in England {{regional.1.mean_visible|f1}}. Wales averages {{regional.2.mean_visible|f1}}, and the Republic of Ireland {{regional.3.mean_visible|f1}}, where hillforts are sparser and often low-lying.</p>
+<div class="figure">
+  <div class="tablewrap"><table class="t" id="regt"></table></div>
+  <div class="src">Averages per fort within 20 km. "See at least one" is the share of forts with any other hillfort in line of sight.</div>
+</div>
+<p>By county, Northumberland is in a class of its own: its forts average {{counties_top.0.mean_visible|f1}} other forts in sight, and {{counties_top.0.share_seeing_any|pct0}} see at least one. The Scottish Borders and East Lothian follow. At the bottom are mostly Atlantic edges: Cork, Kerry, Donegal, Shetland and the Western Isles, where forts are few, often coastal and far apart. Cumbria is the English exception.</p>
+<div class="figure">
+  <div class="tablewrap"><table class="t" id="cty"></table></div>
+  <div class="src">Counties and council areas with at least 25 hillforts, top and bottom six by average number of forts in sight within 20 km.</div>
+</div>
+
+<h2><span class="n">07 · Limits</span>What a line of sight is not</h2>
+<p><b>Seeing a line is not seeing a fort.</b> A line of sight means nothing solid is in the way. Whether a person could make out a rampart 15 km away depends on light, haze and what they were looking for. A fire at night or a column of smoke by day would carry much further than the outline of a bank.</p>
+<p><b>The ground model is coarse.</b> The elevation data have pixels about 90 m across and smooth off summits and crags. Trees, hedges and buildings are not in it, and nobody knows the Iron Age tree cover hill by hill.</p>
+<p><b>Fort points are not summits.</b> The Atlas gives one point per fort, which is not necessarily the highest point or the rampart. On a broad hilltop, the edge of a fort can have a better view than the recorded point. Some well-known pairs fail for this reason. British Camp and Midsummer Hill in the Malverns, {{sanity_pairs.0.km|f1}} km apart, are blocked from their recorded points but visible once both are moved to the highest ground inside an area the size of each fort. Hambledon Hill and Hod Hill in Dorset fail either way in this model. Moving each fort to its highest ground raises the share of pairs in sight within 20 km from {{network.20.share_visible|pct1}} to {{network.20.share_visible_snapped|pct1}}, and a 5 m watcher (a person on a rampart or a fire on a platform) raises it to {{network.20.share_visible_5m|pct1}}.</p>
+<p><b>Dates.</b> The Atlas holds forts from different centuries. The networks show what the ground allows, not a system anyone used.</p>
+
+<div class="note" id="method">
+  <h3>How I did this</h3>
+  <p><b>Sites.</b> All 4,147 hillforts in the Atlas of Hillforts of Britain and Ireland (Lock and Ralston 2017), via the Atlas source data released with Mike Middleton's Hillforts Primer, as used in my companion study <a href="https://tristan-hotham.github.io/famous-few/">The Famous Few</a>.</p>
+  <p><b>Ground.</b> AWS Terrain Tiles (Mapzen/Tilezen) at zoom 10, about 90 m pixels at these latitudes, sampled with bilinear interpolation. Sea is 0 m.</p>
+  <p><b>Line of sight.</b> For every pair of forts up to 30 km apart, I sampled the ground every 45 m along the straight line between them. Eye and target are 2 m above the ground at each fort's recorded point. A sample blocks the line if the ground, raised by the bulge of the earth between the two forts (allowing for standard refraction, k = 0.13), reaches the line. I checked the code on synthetic ground: flat ground stays visible up to the expected horizon, and a ridge blocks the view when it should. I also ran the analysis with 5 m eyes and with each fort moved to the highest ground within a circle of its recorded area (45 to 300 m radius).</p>
+  <p><b>Networks.</b> Forts are linked when they are in line of sight. Networks are the connected groups of linked forts. Relay routes use the fewest hops.</p>
+  <p><b>Null model.</b> For each fort, 500 random points 1 to 5 km away, kept if on land, within 0.05 of the fort's height rank within 2 km, and within 50 m or 25% of its elevation. Twenty shifted maps each move every fort to one of its matches (to a random one of its matches for the {{null_matching.share_forts_matched|pct1}} of forts with at least one, and to one of its five closest candidates for the rest). Shifted forts average {{null_matching.null_mean_elev|f1}} m above sea level against {{null_matching.fort_mean_elev|f1}} m for the real ones. The mixed test pairs each real fort with the shifted positions of its neighbours, in both directions.</p>
+  <p><b>Models.</b> A binomial model of visible neighbours out of neighbours within 20 km, with robust standard errors and nation controls. All numbers on this page come from the published results file.</p>
+</div>
+<div class="cta">
+  <a class="p" href="https://github.com/Tristan-Hotham/within-sight">Data and code</a>
+  <a href="https://tristan-hotham.github.io/famous-few/">The Famous Few: which hillforts get attention</a>
+</div>
