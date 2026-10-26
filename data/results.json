@@ -1,0 +1,2019 @@
+{
+ "n_forts": 4147,
+ "elev_zero_or_below": 6,
+ "distance_profile": [
+  {
+   "lo": 0,
+   "hi": 2,
+   "in_range": 2085,
+   "share": 0.4552
+  },
+  {
+   "lo": 2,
+   "hi": 4,
+   "in_range": 4457,
+   "share": 0.3031
+  },
+  {
+   "lo": 4,
+   "hi": 6,
+   "in_range": 6364,
+   "share": 0.2533
+  },
+  {
+   "lo": 6,
+   "hi": 8,
+   "in_range": 7944,
+   "share": 0.1901
+  },
+  {
+   "lo": 8,
+   "hi": 10,
+   "in_range": 9084,
+   "share": 0.152
+  },
+  {
+   "lo": 10,
+   "hi": 12,
+   "in_range": 9935,
+   "share": 0.1245
+  },
+  {
+   "lo": 12,
+   "hi": 14,
+   "in_range": 11127,
+   "share": 0.1042
+  },
+  {
+   "lo": 14,
+   "hi": 16,
+   "in_range": 12341,
+   "share": 0.0938
+  },
+  {
+   "lo": 16,
+   "hi": 18,
+   "in_range": 13096,
+   "share": 0.0793
+  },
+  {
+   "lo": 18,
+   "hi": 20,
+   "in_range": 13850,
+   "share": 0.0716
+  },
+  {
+   "lo": 20,
+   "hi": 22,
+   "in_range": 14482,
+   "share": 0.0634
+  },
+  {
+   "lo": 22,
+   "hi": 24,
+   "in_range": 14994,
+   "share": 0.0497
+  },
+  {
+   "lo": 24,
+   "hi": 26,
+   "in_range": 15632,
+   "share": 0.0539
+  },
+  {
+   "lo": 26,
+   "hi": 28,
+   "in_range": 16479,
+   "share": 0.0492
+  },
+  {
+   "lo": 28,
+   "hi": 30,
+   "in_range": 17401,
+   "share": 0.0433
+  }
+ ],
+ "network": {
+  "10": {
+   "pairs_in_range": 29934,
+   "pairs_visible": 6803,
+   "share_visible": 0.2273,
+   "pairs_visible_5m": 8895,
+   "share_visible_5m": 0.2972,
+   "pairs_visible_snapped": 7979,
+   "share_visible_snapped": 0.2666,
+   "forts_with_any_in_range": 3981,
+   "forts_seeing_any": 2834,
+   "share_seeing_any": 0.6834,
+   "share_seeing_any_of_those_with_neighbours": 0.7119,
+   "isolated": 1313,
+   "mean_visible": 3.28,
+   "median_visible": 1.0,
+   "max_visible": 45,
+   "max_visible_fort": "Branxton Hill South, Northumberland",
+   "mean_in_range": 14.44,
+   "n_components_multi": 378,
+   "largest_component": 549,
+   "largest_component_share": 0.1324,
+   "forts_in_components_10plus": 1788,
+   "forts_in_components_100plus": 879,
+   "component_size_bins": {
+    "1": 1313,
+    "2": 346,
+    "3 to 5": 453,
+    "6 to 10": 297,
+    "11 to 50": 618,
+    "51 to 200": 571,
+    "201+": 549
+   },
+   "top_components": [
+    {
+     "component": 175,
+     "size": 549,
+     "span_km": 91.8,
+     "countries": {
+      "Scotland": 309,
+      "England": 240
+     },
+     "counties": {
+      "Scottish Borders": 284,
+      "Northumberland": 240,
+      "East Lothian": 25
+     },
+     "edges": 2991
+    },
+    {
+     "component": 671,
+     "size": 127,
+     "span_km": 42.7,
+     "countries": {
+      "Scotland": 127
+     },
+     "counties": {
+      "Scottish Borders": 91,
+      "South Lanarkshire": 36
+     },
+     "edges": 542
+    },
+    {
+     "component": 4,
+     "size": 102,
+     "span_km": 68.3,
+     "countries": {
+      "Wales": 62,
+      "England": 40
+     },
+     "counties": {
+      "Powys": 62,
+      "Shropshire": 39,
+      "Herefordshire": 1
+     },
+     "edges": 183
+    },
+    {
+     "component": 1521,
+     "size": 101,
+     "span_km": 48.1,
+     "countries": {
+      "Scotland": 101
+     },
+     "counties": {
+      "East Lothian": 60,
+      "Midlothian": 18,
+      "City of Edinburgh": 14,
+      "Scottish Borders": 9
+     },
+     "edges": 328
+    },
+    {
+     "component": 122,
+     "size": 97,
+     "span_km": 48.9,
+     "countries": {
+      "Scotland": 97
+     },
+     "counties": {
+      "Dumfries & Galloway": 97
+     },
+     "edges": 392
+    },
+    {
+     "component": 103,
+     "size": 82,
+     "span_km": 54.4,
+     "countries": {
+      "Scotland": 82
+     },
+     "counties": {
+      "Dumfries & Galloway": 82
+     },
+     "edges": 228
+    },
+    {
+     "component": 1057,
+     "size": 62,
+     "span_km": 60.1,
+     "countries": {
+      "Scotland": 62
+     },
+     "counties": {
+      "Perth & Kinross": 50,
+      "Fife": 6,
+      "Angus": 5,
+      "City of Dundee": 1
+     },
+     "edges": 117
+    },
+    {
+     "component": 0,
+     "size": 46,
+     "span_km": 64.5,
+     "countries": {
+      "England": 45,
+      "Wales": 1
+     },
+     "counties": {
+      "Gloucestershire": 22,
+      "Herefordshire": 17,
+      "Worcestershire": 6,
+      "Monmouth": 1
+     },
+     "edges": 65
+    },
+    {
+     "component": 3,
+     "size": 41,
+     "span_km": 51.3,
+     "countries": {
+      "Wales": 38,
+      "England": 3
+     },
+     "counties": {
+      "Powys": 35,
+      "Herefordshire": 3,
+      "Monmouth": 3
+     },
+     "edges": 94
+    },
+    {
+     "component": 738,
+     "size": 38,
+     "span_km": 51.5,
+     "countries": {
+      "Wales": 38
+     },
+     "counties": {
+      "Carmarthenshire": 38
+     },
+     "edges": 90
+    }
+   ],
+   "diameter": {
+    "hops": 19,
+    "route_km": 148.8,
+    "straight_km": 72.8,
+    "start": "Brinklaw, Northumberland (Brinkburn Priory Promontory Fort)",
+    "end": "Broadlee, Scottish Borders",
+    "start_short": "Brinklaw, Northumberland",
+    "end_short": "Broadlee, Scottish Borders",
+    "path": [
+     484,
+     569,
+     529,
+     1079,
+     487,
+     1833,
+     1923,
+     460,
+     515,
+     4079,
+     3312,
+     3239,
+     3220,
+     3181,
+     3128,
+     3082,
+     3120,
+     3083,
+     3058,
+     3059
+    ],
+    "path_names": [
+     "Brinklaw, Northumberland (Brinkburn Priory Promontory Fort)",
+     "Old Rothbury, Northumberland (Kimmer Nod)",
+     "Witchy Neuk, Northumberland (Witchy Nick)",
+     "Bleakmoor Hill, Northumberland (Harden Quarry)",
+     "Tinkler's Dene, Northumberland (Tinker's Dene; Rabbit Hall Or Rabbit Hill)",
+     "Brandon Hill, Northumberland",
+     "East Lillburn, Northumberland",
+     "Humbleton Hill Camp, Northumberland (Homildon; Hameldun; Holmedon; Homilheugh)",
+     "Blackchesters, Northumberland",
+     "Marl Bog, Northumberland",
+     "Castle Law, Scottish Borders",
+     "Hownam Law, Scottish Borders",
+     "The Law, Scottish Borders",
+     "Dunion Hill, Scottish Borders (The Dunion)",
+     "South Minto Hill, Scottish Borders (Minto Hills)",
+     "Coldhouse Kipp, Scottish Borders",
+     "Kaim Law, Scottish Borders",
+     "Mabonlaw, Scottish Borders",
+     "Outerside Rig, Scottish Borders",
+     "Broadlee, Scottish Borders"
+    ]
+   },
+   "farthest_relay": {
+    "hops": 16,
+    "route_km": 132.5,
+    "straight_km": 91.8,
+    "start": "Brinklaw, Northumberland (Brinkburn Priory Promontory Fort)",
+    "end": "Dunbar, Castle Park, East Lothian (Bayswell Road, Swimming Pool Development)",
+    "start_short": "Brinklaw, Northumberland",
+    "end_short": "Dunbar, Castle Park, East Lothian",
+    "path": [
+     484,
+     569,
+     529,
+     1079,
+     487,
+     1833,
+     4064,
+     1835,
+     1937,
+     4100,
+     4115,
+     3909,
+     3871,
+     3895,
+     3852,
+     3720,
+     3708
+    ],
+    "path_names": [
+     "Brinklaw, Northumberland (Brinkburn Priory Promontory Fort)",
+     "Old Rothbury, Northumberland (Kimmer Nod)",
+     "Witchy Neuk, Northumberland (Witchy Nick)",
+     "Bleakmoor Hill, Northumberland (Harden Quarry)",
+     "Tinkler's Dene, Northumberland (Tinker's Dene; Rabbit Hall Or Rabbit Hill)",
+     "Brandon Hill, Northumberland",
+     "Chillingham Park, Northumberland",
+     "Middle Dod Law, Northumberland",
+     "Kypie Hill, Northumberland",
+     "Haly Chesters, Northumberland",
+     "East Newburn, Northumberland",
+     "Foulden, Scottish Borders (New Farm; No 9 Kirkbanny; Deans Burns)",
+     "Stuartslaw, Scottish Borders",
+     "Warlawbank, Horseley Hill, Scottish Borders (Horseley Hill)",
+     "Ewieside Hill, Scottish Borders",
+     "Pinkerton Hill, East Lothian (Meikle Pinkerton)",
+     "Dunbar, Castle Park, East Lothian (Bayswell Road, Swimming Pool Development)"
+    ]
+   },
+   "mean_visible_dist_km": 5.32,
+   "median_visible_dist_km": 5.36
+  },
+  "20": {
+   "pairs_in_range": 90283,
+   "pairs_visible": 12386,
+   "share_visible": 0.1372,
+   "pairs_visible_5m": 16184,
+   "share_visible_5m": 0.1793,
+   "pairs_visible_snapped": 14730,
+   "share_visible_snapped": 0.1632,
+   "forts_with_any_in_range": 4131,
+   "forts_seeing_any": 3226,
+   "share_seeing_any": 0.7779,
+   "share_seeing_any_of_those_with_neighbours": 0.7809,
+   "isolated": 921,
+   "mean_visible": 5.97,
+   "median_visible": 3.0,
+   "max_visible": 76,
+   "max_visible_fort": "Rubers Law, Scottish Borders (Ruberslaw)",
+   "mean_in_range": 43.54,
+   "n_components_multi": 241,
+   "largest_component": 950,
+   "largest_component_share": 0.2291,
+   "forts_in_components_10plus": 2600,
+   "forts_in_components_100plus": 1896,
+   "component_size_bins": {
+    "1": 921,
+    "2": 216,
+    "3 to 5": 268,
+    "6 to 10": 182,
+    "11 to 50": 573,
+    "51 to 200": 239,
+    "201+": 1748
+   },
+   "top_components": [
+    {
+     "component": 82,
+     "size": 950,
+     "span_km": 186.3,
+     "countries": {
+      "Scotland": 709,
+      "England": 241
+     },
+     "counties": {
+      "Scottish Borders": 387,
+      "Northumberland": 241,
+      "East Lothian": 87,
+      "Perth & Kinross": 63,
+      "South Lanarkshire": 38
+     },
+     "edges": 7393
+    },
+    {
+     "component": 0,
+     "size": 590,
+     "span_km": 339.9,
+     "countries": {
+      "England": 400,
+      "Wales": 190
+     },
+     "counties": {
+      "Powys": 104,
+      "Shropshire": 57,
+      "Wiltshire": 48,
+      "Hampshire": 41,
+      "Devon": 39
+     },
+     "edges": 1644
+    },
+    {
+     "component": 10,
+     "size": 208,
+     "span_km": 117.0,
+     "countries": {
+      "Scotland": 203,
+      "England": 5
+     },
+     "counties": {
+      "Dumfries & Galloway": 203,
+      "Cumbria": 5
+     },
+     "edges": 1115
+    },
+    {
+     "component": 387,
+     "size": 148,
+     "span_km": 105.1,
+     "countries": {
+      "Wales": 148
+     },
+     "counties": {
+      "Pembrokeshire": 70,
+      "Carmarthenshire": 53,
+      "Swansea": 25
+     },
+     "edges": 374
+    },
+    {
+     "component": 467,
+     "size": 91,
+     "span_km": 80.8,
+     "countries": {
+      "Wales": 91
+     },
+     "counties": {
+      "Ceredigion": 61,
+      "Pembrokeshire": 19,
+      "Carmarthenshire": 11
+     },
+     "edges": 193
+    },
+    {
+     "component": 84,
+     "size": 46,
+     "span_km": 73.7,
+     "countries": {
+      "Scotland": 46
+     },
+     "counties": {
+      "North Ayrshire": 13,
+      "South Ayrshire": 10,
+      "Argyll & Bute": 8,
+      "Renfrewshire": 4,
+      "West Dunbartonshire": 4
+     },
+     "edges": 93
+    },
+    {
+     "component": 550,
+     "size": 43,
+     "span_km": 80.1,
+     "countries": {
+      "Scotland": 43
+     },
+     "counties": {
+      "Argyll & Bute": 43
+     },
+     "edges": 65
+    },
+    {
+     "component": 92,
+     "size": 38,
+     "span_km": 87.8,
+     "countries": {
+      "England": 38
+     },
+     "counties": {
+      "Cornwall": 34,
+      "Devon": 4
+     },
+     "edges": 56
+    },
+    {
+     "component": 432,
+     "size": 34,
+     "span_km": 57.3,
+     "countries": {
+      "Wales": 34
+     },
+     "counties": {
+      "Gwynedd": 34
+     },
+     "edges": 80
+    },
+    {
+     "component": 319,
+     "size": 30,
+     "span_km": 50.4,
+     "countries": {
+      "Wales": 30
+     },
+     "counties": {
+      "Gwynedd": 14,
+      "Conwy": 10,
+      "Isle of Anglesey": 6
+     },
+     "edges": 63
+    }
+   ],
+   "diameter": {
+    "hops": 22,
+    "route_km": 283.8,
+    "straight_km": 175.5,
+    "start": "Dendon, Northumberland (Little Mill)",
+    "end": "Mains of Edzell, Angus (Edzell Castle)",
+    "start_short": "Dendon, Northumberland",
+    "end_short": "Mains of Edzell, Angus",
+    "path": [
+     493,
+     569,
+     574,
+     1765,
+     1835,
+     4030,
+     3895,
+     3852,
+     467,
+     3672,
+     3622,
+     3525,
+     3527,
+     3001,
+     2945,
+     2968,
+     2892,
+     2897,
+     2898,
+     2908,
+     2909,
+     2925,
+     2910
+    ],
+    "path_names": [
+     "Dendon, Northumberland (Little Mill)",
+     "Old Rothbury, Northumberland (Kimmer Nod)",
+     "Tosson Burgh, Northumberland (Burgh Hill Camp)",
+     "East Brandon Hill, Northumberland",
+     "Middle Dod Law, Northumberland",
+     "Twizel Smithy, Northumberland",
+     "Warlawbank, Horseley Hill, Scottish Borders (Horseley Hill)",
+     "Ewieside Hill, Scottish Borders",
+     "Broxmouth, East Lothian",
+     "Kae Heughs, Barney Mains, East Lothian (Garleton Hills; Kaeheughs)",
+     "Kilspindie Golf Course, East Lothian (Roond Point)",
+     "Arthur's Seat, City of Edinburgh (Edinburgh, Holyrood Park, Arthur's Seat; Queen's Park; Crow Hill)",
+     "Wester Craiglockhart Hill, City of Edinburgh",
+     "Dunearn, Fife (Dunearn Estate)",
+     "Newton, Balbirnie, Fife",
+     "Norman's Law, Fife",
+     "Dundee Law, City of Dundee",
+     "Kinpurney Hill, Angus (Kinpurnie Hill)",
+     "Castle Hill, Meams, Angus",
+     "Turin Hill, Angus (Kemp's Castle; Kemp Castle)",
+     "Brown Caterthun, Angus",
+     "Green Cairn, Cairnton of Balbegno, Aberdeenshire",
+     "Mains of Edzell, Angus (Edzell Castle)"
+    ]
+   },
+   "farthest_relay": {
+    "hops": 36,
+    "route_km": 528.4,
+    "straight_km": 339.9,
+    "start": "Glol Camp, Flintshire",
+    "end": "Burleigh Dolts, Devon (Malborough Camp)",
+    "start_short": "Glol Camp, Flintshire",
+    "end_short": "Burleigh Dolts, Devon",
+    "path": [
+     1376,
+     1136,
+     1134,
+     3009,
+     1484,
+     1133,
+     73,
+     1165,
+     83,
+     49,
+     72,
+     60,
+     20,
+     37,
+     10,
+     31,
+     2266,
+     2269,
+     2272,
+     4127,
+     1442,
+     3736,
+     3774,
+     448,
+     427,
+     439,
+     424,
+     3279,
+     3164,
+     3282,
+     3165,
+     3281,
+     3324,
+     3157,
+     4044,
+     3320,
+     3243
+    ],
+    "path_names": [
+     "Glol Camp, Flintshire",
+     "Moel y Gaer, Rhosesmor, Flintshire (Moel-y-Gaer Camp)",
+     "Caer Estyn, Flintshire",
+     "Maiden Castle, Bickerton, Cheshire West and Chester",
+     "Gwernheylod Banks, Denbighshire",
+     "y Gardden, Ruabon, Wrexham (Gardden Camp, Caer Din; y Dref Fawr; Coed Cristionydd)",
+     "Old Oswestry, Shropshire",
+     "Cefn-y-Castell, Powys (Middletown Hill)",
+     "The Burgs, Shropshire (The Buries; Bayston Hill)",
+     "Caer Caradoc, Church Stretton, Shropshire",
+     "Norton Camp, Shropshire",
+     "Caynham Camp, Shropshire",
+     "Ivington Camp, Herefordshire",
+     "Westington Camp, Herefordshire",
+     "Credenhill Camp, Herefordshire",
+     "Timberline, Herefordshire (Timberline Camp)",
+     "Ysgyryd (Skirrid) Fawr, Monmouth",
+     "Twyn y Gaer, Llanfihangel Crucorney, Monmouth",
+     "Coed y Bwnydd Camp, Monmouth (Coed-y-Bwnyff)",
+     "Coed-y-Caerau Enclosure Complex, Newport",
+     "Graig-y-Saeson, Newport (y Gaer; Coed-y-Defaid)",
+     "Wain's Hill, North Somerset",
+     "Tinker's Batch, North Somerset (Elborough Hill)",
+     "Westbury Camp, Somerset",
+     "Dundon Hill Camp, Somerset (Compton Dundon Hillfort)",
+     "Winsmoor Hill, Stocklinch, Somerset",
+     "Bounds Lane, Somerset",
+     "Musbury Castle, Devon",
+     "Dumpdon Camp, Devon",
+     "Belbury Castle, Devon (Castle Copse; Castle Field)",
+     "Hembury, Payhembury, Devon",
+     "Dolbury, Devon",
+     "Cotley Castle, Devon",
+     "Milber Down, Coffinswell, Devon",
+     "Brent Hill, Devon",
+     "Stanborough Camp, Devon",
+     "Burleigh Dolts, Devon (Malborough Camp)"
+    ]
+   },
+   "mean_visible_dist_km": 9.58,
+   "median_visible_dist_km": 9.07
+  },
+  "30": {
+   "pairs_in_range": 169271,
+   "pairs_visible": 16455,
+   "share_visible": 0.0972,
+   "pairs_visible_5m": 21475,
+   "share_visible_5m": 0.1269,
+   "pairs_visible_snapped": 19703,
+   "share_visible_snapped": 0.1164,
+   "forts_with_any_in_range": 4144,
+   "forts_seeing_any": 3378,
+   "share_seeing_any": 0.8146,
+   "share_seeing_any_of_those_with_neighbours": 0.8152,
+   "isolated": 769,
+   "mean_visible": 7.94,
+   "median_visible": 4.0,
+   "max_visible": 118,
+   "max_visible_fort": "Halidon, Northumberland (Halidon Hill Settlement; Hallydown Hill)",
+   "mean_in_range": 81.64,
+   "n_components_multi": 172,
+   "largest_component": 1048,
+   "largest_component_share": 0.2527,
+   "forts_in_components_10plus": 2911,
+   "forts_in_components_100plus": 2414,
+   "component_size_bins": {
+    "1": 769,
+    "2": 138,
+    "3 to 5": 200,
+    "6 to 10": 139,
+    "11 to 50": 431,
+    "51 to 200": 318,
+    "201+": 2152
+   },
+   "top_components": [
+    {
+     "component": 26,
+     "size": 1048,
+     "span_km": 269.1,
+     "countries": {
+      "Scotland": 807,
+      "England": 241
+     },
+     "counties": {
+      "Scottish Borders": 389,
+      "Northumberland": 241,
+      "East Lothian": 87,
+      "Perth & Kinross": 65,
+      "South Lanarkshire": 46
+     },
+     "edges": 9964
+    },
+    {
+     "component": 0,
+     "size": 859,
+     "span_km": 434.0,
+     "countries": {
+      "England": 554,
+      "Wales": 305
+     },
+     "counties": {
+      "Powys": 125,
+      "Gwynedd": 67,
+      "Shropshire": 57,
+      "Wiltshire": 50,
+      "Devon": 46
+     },
+     "edges": 3006
+    },
+    {
+     "component": 8,
+     "size": 245,
+     "span_km": 158.3,
+     "countries": {
+      "Scotland": 236,
+      "England": 9
+     },
+     "counties": {
+      "Dumfries & Galloway": 234,
+      "Cumbria": 9,
+      "Scottish Borders": 2
+     },
+     "edges": 1375
+    },
+    {
+     "component": 294,
+     "size": 162,
+     "span_km": 118.0,
+     "countries": {
+      "Wales": 162
+     },
+     "counties": {
+      "Pembrokeshire": 73,
+      "Carmarthenshire": 56,
+      "Swansea": 27,
+      "Neath Port Talbot": 5,
+      "Bridgend": 1
+     },
+     "edges": 485
+    },
+    {
+     "component": 339,
+     "size": 100,
+     "span_km": 91.6,
+     "countries": {
+      "Wales": 100
+     },
+     "counties": {
+      "Ceredigion": 65,
+      "Pembrokeshire": 19,
+      "Carmarthenshire": 11,
+      "Gwynedd": 5
+     },
+     "edges": 227
+    },
+    {
+     "component": 427,
+     "size": 56,
+     "span_km": 115.5,
+     "countries": {
+      "Scotland": 56
+     },
+     "counties": {
+      "Argyll & Bute": 56
+     },
+     "edges": 113
+    },
+    {
+     "component": 66,
+     "size": 44,
+     "span_km": 96.2,
+     "countries": {
+      "England": 44
+     },
+     "counties": {
+      "Cornwall": 38,
+      "Devon": 6
+     },
+     "edges": 70
+    },
+    {
+     "component": 647,
+     "size": 37,
+     "span_km": 74.6,
+     "countries": {
+      "Scotland": 37
+     },
+     "counties": {
+      "Highland": 32,
+      "Moray": 5
+     },
+     "edges": 93
+    },
+    {
+     "component": 99,
+     "size": 36,
+     "span_km": 134.7,
+     "countries": {
+      "Republic of Ireland": 36
+     },
+     "counties": {
+      "Tipperary": 12,
+      "Wicklow": 11,
+      "Kildare": 4,
+      "Kilkenny": 3,
+      "Carlow": 2
+     },
+     "edges": 86
+    },
+    {
+     "component": 101,
+     "size": 30,
+     "span_km": 80.2,
+     "countries": {
+      "Republic of Ireland": 30
+     },
+     "counties": {
+      "Clare": 19,
+      "Limerick": 10,
+      "Tipperary": 1
+     },
+     "edges": 61
+    }
+   ],
+   "diameter": {
+    "hops": 22,
+    "route_km": 346.3,
+    "straight_km": 193.0,
+    "start": "Carleton Hill, South Ayrshire",
+    "end": "Earn's Heugh Nw, Scottish Borders (Tun Law)",
+    "start_short": "Carleton Hill, South Ayrshire",
+    "end_short": "Earn's Heugh Nw, Scottish Borders",
+    "path": [
+     770,
+     776,
+     206,
+     775,
+     1118,
+     1202,
+     1283,
+     1334,
+     1375,
+     1399,
+     1425,
+     1757,
+     3525,
+     3698,
+     3724,
+     3720,
+     3852,
+     3895,
+     3940,
+     3937,
+     3899,
+     3913,
+     3883
+    ],
+    "path_names": [
+     "Carleton Hill, South Ayrshire",
+     "High Letterpin, South Ayrshire",
+     "Maxwellston Hill, South Ayrshire",
+     "Houdston Hill, South Ayrshire",
+     "Arran, Dippen, North Ayrshire",
+     "Montfode Mount, North Ayrshire",
+     "Harpercroft, South Ayrshire",
+     "Walls Hill, Renfrewshire (North Castle Walls)",
+     "Craigmaddie, East Dunbartonshire",
+     "Dechmont Hill, South Lanarkshire",
+     "Myot Hill, Falkirk",
+     "Cockleroy, West Lothian",
+     "Arthur's Seat, City of Edinburgh (Edinburgh, Holyrood Park, Arthur's Seat; Queen's Park; Crow Hill)",
+     "East Fenton, East Lothian",
+     "Blackcastle Hill, East Lothian",
+     "Pinkerton Hill, East Lothian (Meikle Pinkerton)",
+     "Ewieside Hill, Scottish Borders",
+     "Warlawbank, Horseley Hill, Scottish Borders (Horseley Hill)",
+     "Habchester, Scottish Borders (Bastleridge)",
+     "St Abb's Head, Scottish Borders (Kirk Hill; Colodaesburg)",
+     "Brander Heugh, Scottish Borders (Lumsdaine)",
+     "Pettico Wick, Scottish Borders",
+     "Earn's Heugh Nw, Scottish Borders (Tun Law)"
+    ]
+   },
+   "farthest_relay": {
+    "hops": 34,
+    "route_km": 708.7,
+    "straight_km": 434.0,
+    "start": "Ynys-y-Fydlyn, Isle of Anglesey",
+    "end": "Seaford Head Camp, East Sussex (Seaford Camp; Burdyck Hill, Seaford Head)",
+    "start_short": "Ynys-y-Fydlyn, Isle of Anglesey",
+    "end_short": "Seaford Head Camp, East Sussex",
+    "path": [
+     1666,
+     1656,
+     1677,
+     1642,
+     1650,
+     1585,
+     1672,
+     1181,
+     1126,
+     1459,
+     2783,
+     1127,
+     1136,
+     3010,
+     3009,
+     73,
+     350,
+     38,
+     357,
+     4,
+     3828,
+     3936,
+     3775,
+     3765,
+     405,
+     414,
+     3633,
+     3596,
+     3823,
+     2404,
+     2412,
+     3551,
+     4034,
+     3534,
+     3537
+    ],
+    "path_names": [
+     "Ynys-y-Fydlyn, Isle of Anglesey",
+     "Caer-y-Twr, Mynydd Twr (Holyhead Mountain)., Isle of Anglesey",
+     "Twyn-y-Parc, Isle of Anglesey",
+     "Careg-y-Llam, Pistyll, Gwynedd",
+     "Caer Idris, Isle of Anglesey",
+     "Maes-y-Gaer Camp, Aber, Gwynedd",
+     "Bwrdd Arthur, Llanddona, Isle of Anglesey (Dinas Sylwy; Din Silwy)",
+     "Bryn Euryn Camp, Rhos-On-Sea, Conwy (Bryn Eirin)",
+     "Moel Hiraddug, Denbighshire (Moel Hiraddug Camp)",
+     "Bedd-y-Cawr, St Asaph, Denbighshire",
+     "Moel Fenlli, Denbighshire (Foel Fenlli)",
+     "Penycloddiau, Denbighshire (Pen y Cloddiau)",
+     "Moel y Gaer, Rhosesmor, Flintshire (Moel-y-Gaer Camp)",
+     "Burton Point, Cheshire West and Chester",
+     "Maiden Castle, Bickerton, Cheshire West and Chester",
+     "Old Oswestry, Shropshire",
+     "Woodhouse Farm, Shropshire",
+     "Abdon Burf, Shropshire",
+     "Woodbury, Great Witley, Worcestershire (Woodbury Hill)",
+     "British Camp, Herefordshire (Herefordshire Beacon)",
+     "High Brotheridge, Gloucestershire (High Brotheridge Camp; Cooper's Hill Camp)",
+     "Lydney Park Camp, Gloucestershire (Lydney Camp; Lydney Park Promontory Fort; Camp Hill Promontory Fort)",
+     "Stokeleigh Camp, North Somerset",
+     "Tunley Camp, Bath and NE Somerset",
+     "Cley Hill Camp, Wiltshire",
+     "Codford Circle, Wiltshire (Oldbury Camp; Wilsbury Ring; Woldsbury)",
+     "Quarley Hill Camp, Hampshire",
+     "Ladle Hill, Hampshire",
+     "Calleva Atrebatum, Hampshire (Silchester (The Inner Earthwork))",
+     "Caesar's Camp, Surrey",
+     "Hascombe Camp, Surrey",
+     "Chanctonbury Ring, West Sussex",
+     "Wolstonbury, West Sussex",
+     "Ditchling Beacon, East Sussex",
+     "Seaford Head Camp, East Sussex (Seaford Camp; Burdyck Hill, Seaford Head)"
+    ]
+   },
+   "mean_visible_dist_km": 13.36,
+   "median_visible_dist_km": 12.28
+  }
+ },
+ "hist_visible_20km": [
+  921,
+  601,
+  471,
+  341,
+  286,
+  242,
+  176,
+  137,
+  108,
+  107,
+  73,
+  77,
+  55,
+  55,
+  59,
+  44,
+  40,
+  33,
+  29,
+  27,
+  265
+ ],
+ "hist_visible": {
+  "10": [
+   1313,
+   775,
+   545,
+   354,
+   242,
+   175,
+   123,
+   103,
+   75,
+   72,
+   53,
+   40,
+   42,
+   22,
+   21,
+   27,
+   24,
+   17,
+   13,
+   12,
+   99
+  ],
+  "20": [
+   921,
+   601,
+   471,
+   341,
+   286,
+   242,
+   176,
+   137,
+   108,
+   107,
+   73,
+   77,
+   55,
+   55,
+   59,
+   44,
+   40,
+   33,
+   29,
+   27,
+   265
+  ],
+  "30": [
+   769,
+   519,
+   419,
+   330,
+   274,
+   250,
+   181,
+   155,
+   132,
+   114,
+   97,
+   86,
+   81,
+   46,
+   63,
+   54,
+   58,
+   36,
+   37,
+   36,
+   410
+  ]
+ },
+ "top_seers_20km": [
+  {
+   "name": "Rubers Law, Scottish Borders (Ruberslaw)",
+   "county": "Scottish Borders",
+   "visible": 76,
+   "in_range": 137
+  },
+  {
+   "name": "Peniel Heugh, Scottish Borders",
+   "county": "Scottish Borders",
+   "visible": 75,
+   "in_range": 155
+  },
+  {
+   "name": "Moneylaws Castle Hill Camp, Northumberland",
+   "county": "Northumberland",
+   "visible": 75,
+   "in_range": 193
+  },
+  {
+   "name": "Cramondhill I, Northumberland",
+   "county": "Northumberland",
+   "visible": 73,
+   "in_range": 199
+  },
+  {
+   "name": "Branxton Hill South, Northumberland",
+   "county": "Northumberland",
+   "visible": 73,
+   "in_range": 199
+  },
+  {
+   "name": "Yeavering Bell Camp, Northumberland",
+   "county": "Northumberland",
+   "visible": 72,
+   "in_range": 223
+  },
+  {
+   "name": "Tillmouth Farm, Northumberland (Riffington Hill)",
+   "county": "Northumberland",
+   "visible": 71,
+   "in_range": 203
+  },
+  {
+   "name": "Halidon, Northumberland (Halidon Hill Settlement; Hallydown Hill)",
+   "county": "Northumberland",
+   "visible": 70,
+   "in_range": 128
+  },
+  {
+   "name": "Ros Castle, Northumberland (Ross Castle)",
+   "county": "Northumberland",
+   "visible": 68,
+   "in_range": 148
+  },
+  {
+   "name": "East Moneylaws Camp, Northumberland (Castle Hill)",
+   "county": "Northumberland",
+   "visible": 68,
+   "in_range": 199
+  },
+  {
+   "name": "Sweethope Hill, Scottish Borders (Stichill)",
+   "county": "Scottish Borders",
+   "visible": 67,
+   "in_range": 139
+  },
+  {
+   "name": "Duns Law, Scottish Borders",
+   "county": "Scottish Borders",
+   "visible": 67,
+   "in_range": 147
+  },
+  {
+   "name": "Hirsel Law, Scottish Borders (The Hirsel Policies)",
+   "county": "Scottish Borders",
+   "visible": 67,
+   "in_range": 183
+  },
+  {
+   "name": "East Norham West Mains, Northumberland",
+   "county": "Northumberland",
+   "visible": 66,
+   "in_range": 185
+  },
+  {
+   "name": "Eildon Hill North, Scottish Borders",
+   "county": "Scottish Borders",
+   "visible": 65,
+   "in_range": 121
+  }
+ ],
+ "regional": [
+  {
+   "country": "Scotland",
+   "n": 1695,
+   "mean_visible": 7.09,
+   "share_seeing_any": 0.7929,
+   "mean_in_range": 55.2,
+   "share_pairs_visible": 0.1276,
+   "median_elev": 112.0
+  },
+  {
+   "country": "England",
+   "n": 1225,
+   "mean_visible": 7.36,
+   "share_seeing_any": 0.7976,
+   "mean_in_range": 44.4,
+   "share_pairs_visible": 0.171,
+   "median_elev": 125.0
+  },
+  {
+   "country": "Wales",
+   "n": 690,
+   "mean_visible": 4.06,
+   "share_seeing_any": 0.829,
+   "mean_in_range": 38.6,
+   "share_pairs_visible": 0.1044,
+   "median_elev": 143.0
+  },
+  {
+   "country": "Republic of Ireland",
+   "n": 475,
+   "mean_visible": 1.82,
+   "share_seeing_any": 0.6526,
+   "mean_in_range": 11.2,
+   "share_pairs_visible": 0.1619,
+   "median_elev": 26.0
+  },
+  {
+   "country": "Northern Ireland",
+   "n": 32,
+   "mean_visible": 0.66,
+   "share_seeing_any": 0.2812,
+   "mean_in_range": 2.8,
+   "share_pairs_visible": 0.2093,
+   "median_elev": 96.0
+  },
+  {
+   "country": "Isle of Man",
+   "n": 30,
+   "mean_visible": 1.53,
+   "share_seeing_any": 0.4667,
+   "mean_in_range": 18.7,
+   "share_pairs_visible": 0.0821,
+   "median_elev": 18.0
+  }
+ ],
+ "counties_top": [
+  {
+   "county": "Northumberland",
+   "country": "England",
+   "n": 271,
+   "mean_visible": 22.99,
+   "share_seeing_any": 0.974,
+   "mean_share_visible": 0.15
+  },
+  {
+   "county": "Scottish Borders",
+   "country": "Scotland",
+   "n": 408,
+   "mean_visible": 13.84,
+   "share_seeing_any": 0.958,
+   "mean_share_visible": 0.113
+  },
+  {
+   "county": "East Lothian",
+   "country": "Scotland",
+   "n": 89,
+   "mean_visible": 12.22,
+   "share_seeing_any": 0.978,
+   "mean_share_visible": 0.127
+  },
+  {
+   "county": "Dumfries & Galloway",
+   "country": "Scotland",
+   "n": 286,
+   "mean_visible": 8.19,
+   "share_seeing_any": 0.885,
+   "mean_share_visible": 0.137
+  },
+  {
+   "county": "Fife",
+   "country": "Scotland",
+   "n": 44,
+   "mean_visible": 7.84,
+   "share_seeing_any": 0.909,
+   "mean_share_visible": 0.213
+  },
+  {
+   "county": "Perth & Kinross",
+   "country": "Scotland",
+   "n": 76,
+   "mean_visible": 6.59,
+   "share_seeing_any": 0.921,
+   "mean_share_visible": 0.179
+  },
+  {
+   "county": "Shropshire",
+   "country": "England",
+   "n": 63,
+   "mean_visible": 6.06,
+   "share_seeing_any": 0.952,
+   "mean_share_visible": 0.201
+  },
+  {
+   "county": "Powys",
+   "country": "Wales",
+   "n": 147,
+   "mean_visible": 5.95,
+   "share_seeing_any": 0.871,
+   "mean_share_visible": 0.135
+  }
+ ],
+ "counties_bottom": [
+  {
+   "county": "Cornwall",
+   "country": "England",
+   "n": 77,
+   "mean_visible": 1.65,
+   "share_seeing_any": 0.61,
+   "mean_share_visible": 0.103
+  },
+  {
+   "county": "Highland",
+   "country": "Scotland",
+   "n": 209,
+   "mean_visible": 1.52,
+   "share_seeing_any": 0.522,
+   "mean_share_visible": 0.099
+  },
+  {
+   "county": "Cork",
+   "country": "Republic of Ireland",
+   "n": 61,
+   "mean_visible": 1.41,
+   "share_seeing_any": 0.541,
+   "mean_share_visible": 0.14
+  },
+  {
+   "county": "Kerry",
+   "country": "Republic of Ireland",
+   "n": 39,
+   "mean_visible": 1.08,
+   "share_seeing_any": 0.513,
+   "mean_share_visible": 0.068
+  },
+  {
+   "county": "Cumbria",
+   "country": "England",
+   "n": 26,
+   "mean_visible": 0.85,
+   "share_seeing_any": 0.577,
+   "mean_share_visible": 0.165
+  },
+  {
+   "county": "Shetland Islands",
+   "country": "Scotland",
+   "n": 33,
+   "mean_visible": 0.67,
+   "share_seeing_any": 0.455,
+   "mean_share_visible": 0.111
+  },
+  {
+   "county": "Donegal",
+   "country": "Republic of Ireland",
+   "n": 38,
+   "mean_visible": 0.39,
+   "share_seeing_any": 0.316,
+   "mean_share_visible": 0.062
+  },
+  {
+   "county": "Western Isles",
+   "country": "Scotland",
+   "n": 30,
+   "mean_visible": 0.07,
+   "share_seeing_any": 0.067,
+   "mean_share_visible": 0.015
+  }
+ ],
+ "n_counties_25plus": 38,
+ "attributes": {
+  "spearman_area_visible": {
+   "rho": 0.093,
+   "p": 9.766706779516743e-09
+  },
+  "spearman_area_share": {
+   "rho": 0.232,
+   "p": 2.1468254801276746e-47
+  },
+  "spearman_elev_visible": {
+   "rho": 0.33,
+   "p": 3.3854124716595223e-106
+  },
+  "spearman_localpct_visible": {
+   "rho": 0.348,
+   "p": 1.2999059393866764e-118
+  },
+  "spearman_density_visible": {
+   "rho": 0.638,
+   "p": 0.0
+  },
+  "groups": {
+   "univallate": {
+    "n": 1985,
+    "mean_visible": 4.3,
+    "median_visible": 2.0,
+    "share_seeing_any": 0.725,
+    "mean_share_visible": 0.147,
+    "mean_in_range": 32.2,
+    "median_elev": 103.0
+   },
+   "multivallate": {
+    "n": 1901,
+    "mean_visible": 8.08,
+    "median_visible": 4.0,
+    "share_seeing_any": 0.845,
+    "mean_share_visible": 0.161,
+    "mean_in_range": 57.8,
+    "median_elev": 132.0
+   },
+   "coastal": {
+    "n": 748,
+    "mean_visible": 1.4,
+    "median_visible": 0.0,
+    "share_seeing_any": 0.493,
+    "mean_share_visible": 0.084,
+    "mean_in_range": 18.2,
+    "median_elev": 15.0
+   },
+   "inland": {
+    "n": 3399,
+    "mean_visible": 6.98,
+    "median_visible": 4.0,
+    "share_seeing_any": 0.841,
+    "mean_share_visible": 0.169,
+    "mean_in_range": 49.1,
+    "median_elev": 140.0
+   },
+   "area_quartiles": [
+    {
+     "range": "0.01 to 0.20 ha",
+     "n": 1033,
+     "mean_visible": 3.84,
+     "share_seeing_any": 0.699,
+     "mean_share_visible": 0.113
+    },
+    {
+     "range": "0.20 to 0.41 ha",
+     "n": 872,
+     "mean_visible": 8.22,
+     "share_seeing_any": 0.836,
+     "mean_share_visible": 0.124
+    },
+    {
+     "range": "0.41 to 1.40 ha",
+     "n": 966,
+     "mean_visible": 7.52,
+     "share_seeing_any": 0.803,
+     "mean_share_visible": 0.146
+    },
+    {
+     "range": "1.40 to 130.00 ha",
+     "n": 936,
+     "mean_visible": 4.88,
+     "share_seeing_any": 0.801,
+     "mean_share_visible": 0.234
+    }
+   ]
+  },
+  "mw_multi_vs_uni_p": 1.6755945040716684e-50,
+  "mw_coastal_vs_inland_p": 1.9571056868944875e-114,
+  "glm_share_visible_20km": {
+   "n": 3743,
+   "note": "Binomial GLM of visible forts out of forts within 20 km; robust (HC1) SEs; nation dummies included; pairs are not independent so intervals are optimistic.",
+   "rows": [
+    {
+     "term": "log2_area",
+     "label": "Twice the enclosed area",
+     "odds_ratio": 1.053,
+     "lo": 1.032,
+     "hi": 1.074,
+     "p": 5.913501862962053e-07
+    },
+    {
+     "term": "multivallate",
+     "label": "Multivallate (2+ ramparts)",
+     "odds_ratio": 1.025,
+     "lo": 0.953,
+     "hi": 1.102,
+     "p": 0.5067953387612079
+    },
+    {
+     "term": "coastal",
+     "label": "Coastal",
+     "odds_ratio": 0.455,
+     "lo": 0.393,
+     "hi": 0.526,
+     "p": 4.2862318090052126e-26
+    },
+    {
+     "term": "elev100",
+     "label": "Every 100 m higher",
+     "odds_ratio": 0.857,
+     "lo": 0.826,
+     "hi": 0.889,
+     "p": 1.9402725758794105e-16
+    },
+    {
+     "term": "local_pct",
+     "label": "Local height percentile (0 to 1)",
+     "odds_ratio": 12.335,
+     "lo": 10.615,
+     "hi": 14.335,
+     "p": 1.2183695369445672e-235
+    }
+   ]
+  },
+  "ols_visible_20km": {
+   "n": 3743,
+   "r2": 0.581,
+   "coef": {
+    "log2_area": {
+     "b": -0.012,
+     "lo": -0.129,
+     "hi": 0.105,
+     "p": 0.8464004500540795
+    },
+    "multivallate": {
+     "b": -0.073,
+     "lo": -0.49,
+     "hi": 0.345,
+     "p": 0.7324257490093624
+    },
+    "coastal": {
+     "b": -0.797,
+     "lo": -1.221,
+     "hi": -0.372,
+     "p": 0.00023761506891066477
+    },
+    "elev100": {
+     "b": -0.79,
+     "lo": -1.035,
+     "hi": -0.544,
+     "p": 2.767383100765679e-10
+    },
+    "local_pct": {
+     "b": 12.745,
+     "lo": 11.692,
+     "hi": 13.798,
+     "p": 2.010993085917269e-124
+    },
+    "forts_within_20km": {
+     "b": 0.147,
+     "lo": 0.137,
+     "hi": 0.157,
+     "p": 5.746238258611855e-191
+    }
+   }
+  }
+ },
+ "null": {
+  "10": {
+   "replicates": 20,
+   "observed_visible": 6803,
+   "null_visible_mean": 5006.1,
+   "null_visible_sd": 94.7,
+   "null_visible_min": 4829,
+   "null_visible_max": 5201,
+   "ratio": 1.359,
+   "z": 19.0,
+   "n_null_ge_obs": 0,
+   "empirical_p": 0.0476,
+   "observed_share": 0.2273,
+   "null_share_mean": 0.1695,
+   "null_share_sd": 0.0028,
+   "null_in_range_mean": 29531.0,
+   "observed_any": 0.6834,
+   "null_any_mean": 0.6442,
+   "observed_mean_deg": 3.28,
+   "null_mean_deg": 2.41,
+   "observed_largest": 549,
+   "null_largest_mean": 575.0,
+   "null_largest_min": 470,
+   "null_largest_max": 643,
+   "cross_share_mean": 0.1927,
+   "cross_share_sd": 0.0024,
+   "cross_share_min": 0.1877,
+   "cross_share_max": 0.1962,
+   "site_factor": 1.137,
+   "expected_if_sites_only": 0.2191,
+   "expected_if_sites_only_min": 0.2117,
+   "expected_if_sites_only_max": 0.2269,
+   "pair_factor": 1.038,
+   "pair_factor_min": 1.002,
+   "pair_factor_max": 1.073,
+   "excess_pct": 0.359,
+   "pair_excess_pct": 0.038,
+   "share_ratio": 1.341,
+   "cross_ratio": 1.137,
+   "obs_over_cross": 1.179,
+   "null_values": [
+    5018,
+    4897,
+    5123,
+    4902,
+    4974,
+    5002,
+    4942,
+    5015,
+    4966,
+    4940,
+    5201,
+    5014,
+    5047,
+    5152,
+    4829,
+    5069,
+    4876,
+    5029,
+    5098,
+    5029
+   ],
+   "null_shares": [
+    0.1701,
+    0.1683,
+    0.1736,
+    0.1658,
+    0.1679,
+    0.1687,
+    0.1676,
+    0.1694,
+    0.1703,
+    0.1672,
+    0.1755,
+    0.1684,
+    0.1696,
+    0.1728,
+    0.1661,
+    0.17,
+    0.1643,
+    0.1717,
+    0.1734,
+    0.1697
+   ],
+   "null_largest": [
+    609,
+    604,
+    628,
+    596,
+    619,
+    616,
+    470,
+    518,
+    537,
+    624,
+    643,
+    580,
+    594,
+    507,
+    602,
+    613,
+    511,
+    509,
+    492,
+    623
+   ]
+  },
+  "20": {
+   "replicates": 20,
+   "observed_visible": 12386,
+   "null_visible_mean": 9103.5,
+   "null_visible_sd": 146.7,
+   "null_visible_min": 8929,
+   "null_visible_max": 9432,
+   "ratio": 1.361,
+   "z": 22.4,
+   "n_null_ge_obs": 0,
+   "empirical_p": 0.0476,
+   "observed_share": 0.1372,
+   "null_share_mean": 0.1011,
+   "null_share_sd": 0.0015,
+   "null_in_range_mean": 90080.0,
+   "observed_any": 0.7779,
+   "null_any_mean": 0.7497,
+   "observed_mean_deg": 5.97,
+   "null_mean_deg": 4.39,
+   "observed_largest": 950,
+   "null_largest_mean": 884.0,
+   "null_largest_min": 744,
+   "null_largest_max": 951,
+   "cross_share_mean": 0.1172,
+   "cross_share_sd": 0.0013,
+   "cross_share_min": 0.1149,
+   "cross_share_max": 0.1199,
+   "site_factor": 1.16,
+   "expected_if_sites_only": 0.1359,
+   "expected_if_sites_only_min": 0.1321,
+   "expected_if_sites_only_max": 0.1397,
+   "pair_factor": 1.01,
+   "pair_factor_min": 0.982,
+   "pair_factor_max": 1.039,
+   "excess_pct": 0.361,
+   "pair_excess_pct": 0.01,
+   "share_ratio": 1.358,
+   "cross_ratio": 1.16,
+   "obs_over_cross": 1.171,
+   "null_values": [
+    8970,
+    9066,
+    9432,
+    8929,
+    8930,
+    9012,
+    9050,
+    9130,
+    9127,
+    9065,
+    9357,
+    9060,
+    9332,
+    9346,
+    8990,
+    9018,
+    9042,
+    9108,
+    9030,
+    9077
+   ],
+   "null_shares": [
+    0.0998,
+    0.1013,
+    0.1046,
+    0.0992,
+    0.0993,
+    0.0998,
+    0.1007,
+    0.101,
+    0.1014,
+    0.1009,
+    0.1034,
+    0.1008,
+    0.1029,
+    0.1038,
+    0.1001,
+    0.0998,
+    0.1,
+    0.101,
+    0.1003,
+    0.101
+   ],
+   "null_largest": [
+    905,
+    931,
+    910,
+    923,
+    933,
+    945,
+    786,
+    951,
+    926,
+    831,
+    797,
+    938,
+    918,
+    790,
+    773,
+    941,
+    908,
+    744,
+    924,
+    908
+   ]
+  },
+  "30": {
+   "replicates": 20,
+   "observed_visible": 16455,
+   "null_visible_mean": 11972.5,
+   "null_visible_sd": 221.9,
+   "null_visible_min": 11657,
+   "null_visible_max": 12466,
+   "ratio": 1.374,
+   "z": 20.2,
+   "n_null_ge_obs": 0,
+   "empirical_p": 0.0476,
+   "observed_share": 0.0972,
+   "null_share_mean": 0.0706,
+   "null_share_sd": 0.0013,
+   "null_in_range_mean": 169576.0,
+   "observed_any": 0.8146,
+   "null_any_mean": 0.7851,
+   "observed_mean_deg": 7.94,
+   "null_mean_deg": 5.77,
+   "observed_largest": 1048,
+   "null_largest_mean": 1019.0,
+   "null_largest_min": 939,
+   "null_largest_max": 1117,
+   "cross_share_mean": 0.0854,
+   "cross_share_sd": 0.001,
+   "cross_share_min": 0.0837,
+   "cross_share_max": 0.0874,
+   "site_factor": 1.21,
+   "expected_if_sites_only": 0.1034,
+   "expected_if_sites_only_min": 0.1016,
+   "expected_if_sites_only_max": 0.1053,
+   "pair_factor": 0.941,
+   "pair_factor_min": 0.923,
+   "pair_factor_max": 0.957,
+   "excess_pct": 0.374,
+   "pair_excess_pct": -0.059,
+   "share_ratio": 1.377,
+   "cross_ratio": 1.21,
+   "obs_over_cross": 1.138,
+   "null_values": [
+    11699,
+    11983,
+    12377,
+    11782,
+    11707,
+    11852,
+    12118,
+    11972,
+    12011,
+    11897,
+    12160,
+    11897,
+    12311,
+    12466,
+    12017,
+    11657,
+    11913,
+    11897,
+    11780,
+    11953
+   ],
+   "null_shares": [
+    0.0692,
+    0.0709,
+    0.0732,
+    0.0695,
+    0.0689,
+    0.07,
+    0.0715,
+    0.0706,
+    0.0706,
+    0.0702,
+    0.0717,
+    0.0703,
+    0.0725,
+    0.0735,
+    0.071,
+    0.0686,
+    0.07,
+    0.0699,
+    0.0694,
+    0.0706
+   ],
+   "null_largest": [
+    1105,
+    981,
+    982,
+    948,
+    1086,
+    1026,
+    953,
+    1047,
+    1022,
+    1096,
+    1081,
+    952,
+    965,
+    1031,
+    939,
+    1117,
+    1080,
+    1094,
+    939,
+    944
+   ]
+  }
+ },
+ "null_matching": {
+  "candidates_per_fort": 500,
+  "annulus_km": [
+   1,
+   5
+  ],
+  "local_radius_km": 2,
+  "pct_tolerance": 0.05,
+  "elev_tolerance": "max(50 m, 25% of fort elevation)",
+  "share_forts_matched": 0.9863,
+  "median_matched_candidates": 31,
+  "fort_mean_elev": 130.7,
+  "null_mean_elev": 132.7,
+  "fort_mean_pct": 0.619,
+  "null_mean_pct": 0.615,
+  "fort_median_rel_height": 6.2
+ },
+ "sanity_pairs": [
+  {
+   "a": "British Camp, Herefordshire (Herefordshire Beacon)",
+   "b": "Midsummer Hill, Herefordshire (Midsummer Hill Camp)",
+   "km": 2.6,
+   "visible_2m": false,
+   "visible_5m": false,
+   "visible_snapped": true
+  },
+  {
+   "a": "British Camp, Herefordshire (Herefordshire Beacon)",
+   "b": "Kemerton Camp, Bredon Hill, Worcestershire (Bredon Hill Camp)",
+   "km": 19.7,
+   "visible_2m": true,
+   "visible_5m": true,
+   "visible_snapped": true
+  },
+  {
+   "a": "Eggardon, Dorset (Eggardun)",
+   "b": "Maiden Castle, Winterborne St Martin, Dorset (Maiden Castle, Dorchester)",
+   "km": 14.21,
+   "visible_2m": false,
+   "visible_5m": false,
+   "visible_snapped": false
+  },
+  {
+   "a": "Hambledon Hill, Dorset",
+   "b": "Hod Hill, Dorset",
+   "km": 2.37,
+   "visible_2m": false,
+   "visible_5m": false,
+   "visible_snapped": false
+  },
+  {
+   "a": "Lambert's Castle, Dorset",
+   "b": "Pilsdon Pen, Dorset",
+   "km": 4.64,
+   "visible_2m": true,
+   "visible_5m": true,
+   "visible_snapped": true
+  },
+  {
+   "a": "Eildon Hill North, Scottish Borders",
+   "b": "Traprain Law, East Lothian (Dumpender Law)",
+   "km": 41.94,
+   "visible_2m": null,
+   "visible_5m": null,
+   "visible_snapped": null
+  },
+  {
+   "a": "Badbury Rings, Dorset (Badbury Camp)",
+   "b": "Maiden Castle, Winterborne St Martin, Dorset (Maiden Castle, Dorchester)",
+   "km": 32.85,
+   "visible_2m": null,
+   "visible_5m": null,
+   "visible_snapped": null
+  }
+ ],
+ "examples": {
+  "rubers": {
+   "name": "Rubers Law, Scottish Borders (Ruberslaw)",
+   "visible_20km": 76,
+   "forts_within_20km": 137
+  },
+  "yeavering": {
+   "name": "Yeavering Bell Camp, Northumberland",
+   "visible_20km": 72,
+   "forts_within_20km": 223
+  },
+  "maiden": {
+   "name": "Maiden Castle, Winterborne St Martin, Dorset (Maiden Castle, Dorchester)",
+   "visible_20km": 1,
+   "forts_within_20km": 16
+  },
+  "british_camp": {
+   "name": "British Camp, Herefordshire (Herefordshire Beacon)",
+   "visible_20km": 8,
+   "forts_within_20km": 15
+  }
+ },
+ "runtime_s": {
+  "observed": 62.6,
+  "null": 987.1
+ },
+ "params": {
+  "eye_height_m": 2,
+  "eye_height_sensitivity_m": 5,
+  "k_refraction": 0.13,
+  "earth_radius_m": 6371000,
+  "step_m": 45,
+  "interpolation": "bilinear",
+  "dem": "AWS Terrain Tiles terrarium, zoom 10 (about 90 m pixels)",
+  "distances_km": [
+   10,
+   20,
+   30
+  ],
+  "snap": "highest DEM point within a circle of the fort's recorded area (radius 45 to 300 m)"
+ }
+}
