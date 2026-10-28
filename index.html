@@ -498,6 +498,6 @@ resp(document.getElementById("coef"), (W, nar) => {
     [...R.counties_top.slice(0, 6), null, ...R.counties_bottom.slice(-6)].map(r => r ? `<tr><td>${r.county}</td><td class="num">${fmt(r.n)}</td><td class="num">${r.mean_visible.toFixed(1)}</td><td class="num">${pc(r.share_seeing_any)}</td></tr>` : `<tr><td colspan="4" style="color:var(--muted);text-align:center">...</td></tr>`).join("") + "</tbody>";
 })();
 </script>
-<script src="https://tristan-hotham.github.io/assets/site-nav.js" defer></script>
+<script src="/assets/site-nav.js" defer></script>
 </body>
 </html>
